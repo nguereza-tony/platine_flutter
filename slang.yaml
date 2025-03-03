@@ -8,8 +8,8 @@ locale_handling: true
 flutter_integration: true
 namespaces: true
 translate_var: pft
-enum_name: AppLocale
-class_name: Translations
+enum_name: PlatineAppLocale
+class_name: PlatineTranslations
 translation_class_visibility: private
 key_case: camel
 key_map_case: snake

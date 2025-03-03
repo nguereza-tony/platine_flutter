@@ -7,7 +7,7 @@ class DeleteDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pft = Translations.of(context);
+    final pft = PlatineTranslations.of(context);
 
     return AlertDialog(
       elevation: 0,
