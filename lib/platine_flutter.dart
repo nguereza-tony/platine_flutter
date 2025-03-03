@@ -1,6 +1,6 @@
 library platine_flutter;
 
-export 'src/api/api_client.dart';
+export 'src/api/rest_client.dart';
 export 'src/components/app_bar_title.dart';
 export 'src/components/app_button_back.dart';
 export 'src/components/app_date_form_field.dart';

@@ -3,8 +3,8 @@ import 'package:platine_flutter/platine_flutter.dart';
 import 'package:rest_api_client/rest_api_client.dart';
 import 'package:simple_dart_logger/simple_dart_logger.dart';
 
-class ApiClient {
-  Future<RestApiClient> create({
+class RestClient {
+  Future<RestApiClient> build({
     required String apiBaseURL,
     required String refreshTokenEndpoint,
     required int apiTokenResponseCode,
