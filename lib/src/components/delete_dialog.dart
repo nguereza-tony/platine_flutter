@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:personal_budget/i18n/translations.g.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 
 class DeleteDialog extends StatelessWidget {
   void Function()? onValid;
@@ -7,7 +7,7 @@ class DeleteDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = Translations.of(context);
+    final pft = Translations.of(context);
 
     return AlertDialog(
       elevation: 0,
@@ -16,15 +16,15 @@ class DeleteDialog extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text(t.buttons.cancel),
+          child: Text(pft.buttons.cancel),
         ),
         TextButton(
           onPressed: onValid,
-          child: Text(t.buttons.delete),
+          child: Text(pft.buttons.delete),
         ),
       ],
       content: Text(
-        t.labels.dialog.deleteContent,
+        pft.labels.dialog.deleteContent,
         style: const TextStyle(
           fontSize: 14,
           fontFamily: 'poppins',
@@ -34,7 +34,7 @@ class DeleteDialog extends StatelessWidget {
       ),
       scrollable: true,
       title: Text(
-        t.labels.dialog.deleteTitle,
+        pft.labels.dialog.deleteTitle,
         style: const TextStyle(
           fontSize: 14,
           fontFamily: 'poppins',

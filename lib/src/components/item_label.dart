@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:personal_budget/components/grey_label.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 
 class ItemLabel extends StatelessWidget {
   String label;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:number_pagination/number_pagination.dart';
-import 'package:personal_budget/constants/colors.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 
 class AppPagination extends StatelessWidget {
   int currentPage;

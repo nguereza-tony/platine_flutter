@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:personal_budget/constants/colors.dart';
 import 'package:pinput/pinput.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 
 class AppPinFormField extends StatelessWidget {
   FocusNode pinFocusNode = FocusNode();
