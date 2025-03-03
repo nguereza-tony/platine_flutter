@@ -3,10 +3,10 @@ import 'package:number_pagination/number_pagination.dart';
 import 'package:platine_flutter/platine_flutter.dart';
 
 class AppPagination extends StatelessWidget {
-  int currentPage;
-  int totalPage;
-  dynamic Function(int) onPageChange;
-  AppPagination({
+  final int currentPage;
+  final int totalPage;
+  final dynamic Function(int) onPageChange;
+  const AppPagination({
     super.key,
     required this.currentPage,
     required this.totalPage,

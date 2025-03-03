@@ -4,18 +4,18 @@ import 'package:pinput/pinput.dart';
 import 'package:platine_flutter/platine_flutter.dart';
 
 class AppPinFormField extends StatelessWidget {
-  FocusNode pinFocusNode = FocusNode();
-  TextEditingController? controller;
-  String? Function(String?)? validator;
-  void Function(String?)? onCompleted;
-  void Function(String?)? onChanged;
-  int length;
-  bool hidden = false;
+  final FocusNode pinFocusNode = FocusNode();
+  final TextEditingController? controller;
+  final String? Function(String?)? validator;
+  final void Function(String?)? onCompleted;
+  final void Function(String?)? onChanged;
+  final int length;
+  final bool hidden;
 
   AppPinFormField({
     super.key,
-    this.length = 4,
-    this.hidden = false,
+    required this.length,
+    required this.hidden,
     this.controller,
     this.validator,
     this.onCompleted,

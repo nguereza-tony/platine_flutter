@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:platine_flutter/platine_flutter.dart';
 
 class ItemLabel extends StatelessWidget {
-  String label;
-  String? description;
-  ItemLabel({super.key, required this.label, this.description});
+  final String label;
+  final String? description;
+  const ItemLabel({super.key, required this.label, this.description});
 
   @override
   Widget build(BuildContext context) {

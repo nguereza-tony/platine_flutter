@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class DefaultButton extends StatelessWidget {
-  Function onSubmit;
+  final Function onSubmit;
   final Color backgroundColor;
   final Color textColor;
   final String text;
 
-  DefaultButton({
+  const DefaultButton({
     super.key,
     required this.onSubmit,
     required this.backgroundColor,

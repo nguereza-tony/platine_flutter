@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:platine_flutter/platine_flutter.dart';
 
 class DeleteDialog extends StatelessWidget {
-  void Function()? onValid;
-  DeleteDialog({super.key, this.onValid});
+  final void Function()? onValid;
+  const DeleteDialog({super.key, this.onValid});
 
   @override
   Widget build(BuildContext context) {

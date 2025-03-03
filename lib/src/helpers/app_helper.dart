@@ -1,8 +1,10 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:platine_flutter/platine_flutter.dart';
+import 'package:simple_dart_logger/simple_dart_logger.dart';
 
 String formatNumber(dynamic value, [int decimal = 2]) {
   return NumberFormat.decimalPatternDigits(
@@ -92,4 +94,18 @@ InputDecoration getInputDecoration({
       color: kInputHintColor,
     ),
   );
+}
+
+/// set global error handlers
+void setErrorHandlers() async {
+  FlutterError.onError = (FlutterErrorDetails errorDetails) async {
+    Logger logger = await LoggerHelper.create(null, 'FlutterError');
+    logger.error(errorDetails.exception.toString());
+  };
+  PlatformDispatcher.instance.onError = (Object error, StackTrace stack) {
+    Future<Logger> logger = LoggerHelper.create(null, 'PlatformDispatcher');
+    logger.then((v) => v.error(error.toString()));
+
+    return true;
+  };
 }
