@@ -8,4 +8,4 @@ flutter pub add platine_flutter
 ```
 
 ### License
-MIT License See [LICENSE.MD](LICENSE)
+MIT License See [LICENSE](LICENSE)

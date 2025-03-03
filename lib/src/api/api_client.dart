@@ -155,6 +155,7 @@ class ApiClient {
       // TODO find a way to handle validation errors
       Map<String, dynamic> errors;
       errors = e.response?.data['errors'] ?? {};
+      if (errors.isEmpty) {}
     }
 
     if (message.isEmpty == false &&
