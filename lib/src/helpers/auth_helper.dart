@@ -1,4 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 
 class AuthHelper {
   static FlutterSecureStorage _getStorage() {
@@ -28,7 +29,12 @@ class AuthHelper {
     if (await storage.containsKey(key: 'api_token')) {
       storage.delete(key: 'api_token');
     }
-    var api = await ApiClient().create();
+    var api = await ApiClient().create(
+      apiBaseURL: '',
+      apiErrorCodes: {},
+      apiTokenResponseCode: 200,
+      refreshTokenEndpoint: '',
+    );
     await api.unAuthorize();
   }
 }

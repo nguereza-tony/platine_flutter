@@ -6,7 +6,7 @@
 /// Locales: 1
 /// Strings: 113
 ///
-/// Built on 2025-03-03 at 09:22 UTC
+/// Built on 2025-03-03 at 09:56 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint, unused_import
@@ -78,12 +78,12 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
 /// Method A: Simple
 ///
 /// No rebuild after locale change.
-/// Translation happens during initialization of the widget (call of t).
+/// Translation happens during initialization of the widget (call of pft).
 /// Configurable via 'translate_var'.
 ///
 /// Usage:
-/// String a = t.someKey.anotherKey;
-Translations get t => LocaleSettings.instance.currentTranslations;
+/// String a = pft.someKey.anotherKey;
+Translations get pft => LocaleSettings.instance.currentTranslations;
 
 /// Method B: Advanced
 ///
@@ -97,8 +97,8 @@ Translations get t => LocaleSettings.instance.currentTranslations;
 /// );
 ///
 /// Step 2:
-/// final t = Translations.of(context); // Get t variable.
-/// String a = t.someKey.anotherKey; // Use t variable.
+/// final pft = Translations.of(context); // Get pft variable.
+/// String a = pft.someKey.anotherKey; // Use pft variable.
 class TranslationProvider extends BaseTranslationProvider<AppLocale, Translations> {
 	TranslationProvider({required super.child}) : super(settings: LocaleSettings.instance);
 
@@ -109,9 +109,9 @@ class TranslationProvider extends BaseTranslationProvider<AppLocale, Translation
 /// Configurable via 'translate_var'.
 ///
 /// Usage (e.g. in a widget's build method):
-/// context.t.someKey.anotherKey
+/// context.pft.someKey.anotherKey
 extension BuildContextTranslationsExtension on BuildContext {
-	Translations get t => TranslationProvider.of(this).translations;
+	Translations get pft => TranslationProvider.of(this).translations;
 }
 
 /// Manages all translation instances and the current locale

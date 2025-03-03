@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^2.3.3
-  slang: 4.4.0
-  slang_flutter: 4.4.0
+  slang: ^4.4.0
+  slang_flutter: ^4.4.0
   hexcolor: ^3.0.1
   fast_validator: ^0.3.0
   rest_api_client: ^2.3.2
@@ -33,7 +33,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.0
   build_runner: ^2.4.11
-  slang_build_runner: 4.4.0
+  slang_build_runner: ^4.4.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

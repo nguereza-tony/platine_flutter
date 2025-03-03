@@ -1,15 +1,22 @@
 import 'package:flutter/foundation.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 import 'package:rest_api_client/rest_api_client.dart';
 import 'package:simple_dart_logger/simple_dart_logger.dart';
 
 class ApiClient {
-  Future<RestApiClient> create() async {
+  Future<RestApiClient> create({
+    required String apiBaseURL,
+    required String refreshTokenEndpoint,
+    required int apiTokenResponseCode,
+    required Map<int, String> apiErrorCodes,
+    List<String>? ignoreAuthForPaths,
+  }) async {
     RestApiClient restApiClient = RestApiClientImpl(
       options: RestApiClientOptions(
         baseUrl: apiBaseURL,
         cacheEnabled: false,
       ),
-      authOptions: _getAuthOptions(),
+      authOptions: _getAuthOptions(ignoreAuthForPaths, refreshTokenEndpoint),
       loggingOptions: const LoggingOptions(
         logNetworkTraffic: kReleaseMode == false,
         logCacheStorage: false,
@@ -25,11 +32,11 @@ class ApiClient {
       exceptionOptions: _getExceptionOptions(),
       interceptors: [
         InterceptorsWrapper(onError: (DioException e, handler) {
-          _errorInterceptor(e, handler);
+          _errorInterceptor(e, handler, apiErrorCodes);
         }, onRequest: (options, handler) {
           _requestInterceptor(options, handler);
         }, onResponse: (response, handler) {
-          _responseInterceptor(response, handler);
+          _responseInterceptor(response, handler, apiTokenResponseCode);
         }),
       ],
     );
@@ -40,21 +47,16 @@ class ApiClient {
   }
 
   /// Return the authentication parameters
-  AuthOptions _getAuthOptions() {
+  AuthOptions _getAuthOptions(
+    List<String>? ignoreAuthForPaths,
+    String refreshTokenEndpoint,
+  ) {
     var refreshStrategy = RefreshTokenStrategy.preemptivelyRefreshBeforeExpiry;
     return AuthOptions(
       useSecureStorage: true,
       refreshTokenExecutionType: refreshStrategy,
-      ignoreAuthForPaths: [
-        ApiEndpoints.userLogin,
-        ApiEndpoints.userCreate,
-        ApiEndpoints.resetPassword,
-        ApiEndpoints.userValidationCodeSend,
-        ApiEndpoints.userValidationCodeConfirm,
-        ApiEndpoints.currencyList,
-        ApiEndpoints.authToken,
-      ],
-      refreshTokenEndpoint: ApiEndpoints.authToken,
+      ignoreAuthForPaths: ignoreAuthForPaths ?? [],
+      refreshTokenEndpoint: refreshTokenEndpoint,
       refreshTokenParameterName: 'refresh_token',
       refreshTokenBodyBuilder: (jwt, refreshToken) => {
         'refresh_token': refreshToken,
@@ -86,7 +88,10 @@ class ApiClient {
 
   /// The API response interceptor
   Future<void> _responseInterceptor(
-      Response<dynamic> response, ResponseInterceptorHandler handler) async {
+    Response<dynamic> response,
+    ResponseInterceptorHandler handler,
+    int apiTokenResponseCode,
+  ) async {
     // update token if response is token
     int code = response.data['code'] ?? -1;
     if (code == apiTokenResponseCode) {
@@ -117,7 +122,10 @@ class ApiClient {
 
   /// The API error interceptor
   Future<void> _errorInterceptor(
-      DioException e, ErrorInterceptorHandler handler) async {
+    DioException e,
+    ErrorInterceptorHandler handler,
+    Map<int, String> apiErrorCodes,
+  ) async {
     if (e.message != null) {
       Logger logger = await LoggerHelper.create(this, null);
       logger.error('${e.type.name} -> ${e.message ?? ''}');
@@ -133,7 +141,7 @@ class ApiClient {
 
     if (errorMessage != null &&
         ignoreNotifyStatusCodes.contains(statusCode) == false) {
-      NotificationHelper.error(errorMessage, t.errors.error, 5);
+      NotificationHelper.error(errorMessage, pft.errors.error, 5);
     }
 
     int code = e.response?.data['code'] ?? -1;
@@ -153,7 +161,7 @@ class ApiClient {
         ignoreNotifyStatusCodes.contains(statusCode) == false) {
       NotificationHelper.error(
         message,
-        t.errors.error,
+        pft.errors.error,
         5,
       );
     }
@@ -166,13 +174,13 @@ class ApiClient {
   /// Return The [DioExceptionType] errors description for each type
   Map<DioExceptionType, String> _getDioErrorMaps() {
     return {
-      DioExceptionType.connectionError: t.errors.api.connectionError,
-      DioExceptionType.connectionTimeout: t.errors.api.connectionTimeout,
-      DioExceptionType.sendTimeout: t.errors.api.sendTimeout,
-      DioExceptionType.receiveTimeout: t.errors.api.receiveTimeout,
-      DioExceptionType.badCertificate: t.errors.api.badCertificate,
-      DioExceptionType.cancel: t.errors.api.requestCancel,
-      DioExceptionType.unknown: t.errors.api.unknownError,
+      DioExceptionType.connectionError: pft.errors.api.connectionError,
+      DioExceptionType.connectionTimeout: pft.errors.api.connectionTimeout,
+      DioExceptionType.sendTimeout: pft.errors.api.sendTimeout,
+      DioExceptionType.receiveTimeout: pft.errors.api.receiveTimeout,
+      DioExceptionType.badCertificate: pft.errors.api.badCertificate,
+      DioExceptionType.cancel: pft.errors.api.requestCancel,
+      DioExceptionType.unknown: pft.errors.api.unknownError,
     };
   }
 }

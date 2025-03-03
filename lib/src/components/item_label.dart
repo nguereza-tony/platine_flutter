@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platine_flutter/platine_flutter.dart';
 
 class ItemLabel extends StatelessWidget {
   String label;
