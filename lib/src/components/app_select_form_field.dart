@@ -3,16 +3,16 @@ import 'package:platine_flutter/platine_flutter.dart';
 import 'package:select_form_field/select_form_field.dart';
 
 class AppSelectFormField extends StatelessWidget {
-  TextEditingController? controller;
-  String? placeholder;
-  String? initialValue;
-  String? Function(String?)? validator;
-  void Function(String?)? onChange;
-  IconData? prefixIcon;
-  IconData? suffixIcon;
-  List<Map<String, dynamic>> items = [];
+  final TextEditingController? controller;
+  final String? placeholder;
+  final String? initialValue;
+  final String? Function(String?)? validator;
+  final void Function(String?)? onChange;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
+  final List<Map<String, dynamic>> items;
 
-  AppSelectFormField({
+  const AppSelectFormField({
     super.key,
     this.controller,
     this.prefixIcon,

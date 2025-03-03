@@ -29,6 +29,8 @@ class AuthHelper {
     if (await storage.containsKey(key: 'api_token')) {
       storage.delete(key: 'api_token');
     }
+
+    /// TODO
     var api = await ApiClient().create(
       apiBaseURL: '',
       apiErrorCodes: {},

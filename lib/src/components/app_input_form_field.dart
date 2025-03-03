@@ -3,17 +3,17 @@ import 'package:flutter/services.dart';
 import 'package:platine_flutter/platine_flutter.dart';
 
 class AppInputFormField extends StatelessWidget {
-  TextEditingController? controller;
-  TextInputType? inputType;
-  String? placeholder;
-  int? maxLines;
-  List<TextInputFormatter>? formatters;
-  String? Function(String?)? validator;
-  bool hidden;
-  IconData? prefixIcon;
-  IconData? suffixIcon;
+  final TextEditingController? controller;
+  final TextInputType? inputType;
+  final String? placeholder;
+  final int? maxLines;
+  final List<TextInputFormatter>? formatters;
+  final String? Function(String?)? validator;
+  final bool hidden;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
 
-  AppInputFormField({
+  const AppInputFormField({
     super.key,
     this.hidden = false,
     this.controller,

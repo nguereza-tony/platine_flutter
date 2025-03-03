@@ -4,16 +4,16 @@ import 'package:intl/intl.dart';
 import 'package:platine_flutter/platine_flutter.dart';
 
 class AppDateFormField extends StatelessWidget {
-  DateTime? initialValue;
-  String? placeholder;
-  String format;
-  DateTimeFieldPickerMode mode;
-  String? Function(DateTime?)? validator;
-  void Function(DateTime?)? onChange;
-  IconData? prefixIcon;
-  IconData? suffixIcon;
+  final DateTime? initialValue;
+  final String? placeholder;
+  final String format;
+  final DateTimeFieldPickerMode mode;
+  final String? Function(DateTime?)? validator;
+  final void Function(DateTime?)? onChange;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
 
-  AppDateFormField({
+  const AppDateFormField({
     super.key,
     this.onChange,
     this.initialValue,
