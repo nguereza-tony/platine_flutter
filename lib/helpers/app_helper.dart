@@ -2,12 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:personal_budget/components/app_bar_title.dart';
-import 'package:personal_budget/components/app_button_back.dart';
-import 'package:personal_budget/constants/colors.dart';
-import 'package:personal_budget/i18n/translations.g.dart';
-import 'package:personal_budget/models/currency.dart';
-import 'package:personal_budget/models/tag.dart';
 
 enum ValidationCodeType { passwordReset, userCreate, pinReset }
 

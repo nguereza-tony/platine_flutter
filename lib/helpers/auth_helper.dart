@@ -1,5 +1,4 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:personal_budget/api/api_client.dart';
 
 class AuthHelper {
   static FlutterSecureStorage _getStorage() {

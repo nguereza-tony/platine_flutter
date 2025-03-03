@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:personal_budget/constants/colors.dart';
 import 'package:pinput/pinput.dart';
 
 class AppPinFormField extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:personal_budget/i18n/translations.g.dart';
 
 class DeleteDialog extends StatelessWidget {
   void Function()? onValid;
