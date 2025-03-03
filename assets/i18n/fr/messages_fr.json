@@ -1,0 +1,7 @@
+{
+  "login_success": "Vous êtes connecté avec succès",
+  "logout_success": "Vous êtes déconnecté avec succès",
+  "user_edit_success": "Votre compte a été modifié avec succès",
+  "user_edit_password_success": "Votre mot de passe a été modifié avec succès",
+  "reset_password_success": "Votre mot de passe a été modifié avec succès"
+}

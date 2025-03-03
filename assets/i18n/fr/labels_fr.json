@@ -1,0 +1,37 @@
+{
+  "no_record": "Aucun enregistrement",
+  "filter_select_all": "-- Tout --",
+  "securities": "Sécurités",
+  "help_supports": "Aides & Supports",
+  "dialog": {
+    "delete_title": "Suppression",
+    "delete_content": "Voulez-vous supprimer cet enregistrement ?"
+  },
+  "actions": {
+    "reset_password": "Mot de passe oublié ?",
+    "resend_validation_code": "Renvoyer le code de validation",
+    "change_password": "Changer le mot de passe",
+    "logout": "Déconnexion",
+    "contact_us": "Contactez nous",
+    "terms": "Conditions d'utilisations",
+    "faq": "FAQ",
+    "setting": "Paramètre",
+    "about": "A propos",
+    "login": "Connexion"
+  },
+  "app_setting": {
+    "section_general": "Général",
+    "section_api": "REST API",
+    "section_logging": "Logs",
+    "language_title": "Langue",
+    "api_connect_timeout_title": "Délai d'attente de connexion",
+    "api_send_timeout_title": "Délai d'attente d'envoie de la requête",
+    "api_receive_timeout_title": "Délai d'attente pour la réception de la réponse",
+    "log_file_keep_history_title": "Historique des fichiers logs",
+    "log_file_size_title": "Taille de chaque fichier logs",
+    "logger_enable_title": "Activer les logs de l'application",
+    "french": "Français",
+    "english": "Anglais",
+    "seconds": "Secondes"
+  }
+}

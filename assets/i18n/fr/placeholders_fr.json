@@ -1,0 +1,16 @@
+{
+  "username": "Nom d'utilisateur",
+  "email": "E-mail",
+  "lastname": "Nom de famille",
+  "firstname": "Prénom",
+  "new_password": "Nouveau mot de passe",
+  "password": "Mot de passe",
+  "current_password": "Mot de passe actuel",
+  "confirm_password": "Confirmation de mot de passe",
+  "validation_code": "Code de validation",
+  "start_date": "Date de début",
+  "end_date": "Date de fin",
+  "date": "Date",
+  "search": "Rechercher",
+  "description": "Description"
+}

@@ -1,0 +1,12 @@
+{
+  "dashboard": "Accueil",
+  "login": "Authentification",
+  "user_edit": "Modifier votre compte",
+  "user_profile": "Mon compte",
+  "reset_password": "Mot de passe oublié",
+  "create_password": "Créer un mot de passe",
+  "edit_password": "Modifier votre mot de passe",
+  "setting": "Paramètre",
+  "about": "A propos",
+  "filter": "Filtrer"
+}

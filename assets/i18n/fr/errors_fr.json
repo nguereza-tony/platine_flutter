@@ -1,0 +1,40 @@
+{
+  "error": "Erreur",
+  "validator": {
+    "required": "Ce champ est obligatoire",
+    "number": "Ce champ doit être un nombre",
+    "password": "Ce champ doit être un mot de passe valide",
+    "password_min_length": "Le mot de passe doit avoir au moins {length: int} caractères",
+    "password_uppercase": "Le mot de passe doit contenir au moins une lettre majuscule",
+    "password_lowercase": "Le mot de passe doit contenir au moins une lettre minuscule",
+    "password_special_chars": "Le mot de passe doit contenir au moins un caractère spécial",
+    "password_numbers": "Le mot de passe doit contenir au moins un chiffre",
+    "email": "Ce champ doit être une adresse E-mail",
+    "alpha_numeric": "Ce champ doit avoir uniquement les chiffres/lettres",
+    "matches": "Ce champ doit être identique au champ {field: String}",
+    "exact_length": "Ce champ doit avoir exactement {length: int} caractères",
+    "min_length": "Ce champ doit avoir au moins {length: int} caractères",
+    "max_length": "Ce champ doit avoir au maximum {length: int} caractères"
+  },
+  "api": {
+    "connection_error": "Erreur de connexion au serveur",
+    "connection_timeout": "Le délai de connexion est dépassé",
+    "send_timeout": "Le délai d'attente s'est écoulé lors de l'envoi de la demande",
+    "receive_timeout": "Le délai d'attente s'est écoulé lors de la réception de la réponse",
+    "bad_certificate": "Mauvaise configuration du certificat",
+    "request_cancel": "La requête est annulée",
+    "unknown_error": "Erreur inconnue",
+    "incorrect_user_password": "Mot de passe incorrect",
+    "incorrect_verification_code": "Code de vérification incorrect",
+    "user_is_locked": "Le compte utilisateur est bloqué",
+    "user_not_found": "Le compte utilisateur n'existe pas",
+    "user_email_not_found": "L'adresse E-mail n'existe pas",
+    "record_not_found": "Cet enregistrement n'existe pas",
+    "user_refresh_token_not_found": "Le jeton de rafraîchissement n'existe pas",
+    "username_already_exist": "Le nom d'utilisateur existe déjà",
+    "user_email_already_exist": "L'adresse E-mail existe déjà",
+    "user_account_already_exist": "Ce compte utilisateur existe déjà",
+    "internal_server_error": "Erreur interne du serveur",
+    "auth": "Mauvaises informations de connexion"
+  }
+}
