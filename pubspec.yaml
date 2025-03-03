@@ -71,3 +71,11 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto.ttf
+
