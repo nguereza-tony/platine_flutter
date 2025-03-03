@@ -31,7 +31,7 @@ class AuthHelper {
     }
 
     /// TODO
-    var api = await ApiClient().create(
+    var api = await RestClient().build(
       apiBaseURL: '',
       apiErrorCodes: {},
       apiTokenResponseCode: 200,
