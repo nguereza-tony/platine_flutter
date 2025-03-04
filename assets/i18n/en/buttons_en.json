@@ -1,0 +1,13 @@
+{
+  "login": "Connection",
+  "create_password": "Create password",
+  "edit_password": "Change password",
+  "edit": "Edit",
+  "next": "Next",
+  "validate": "Validate",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "save": "Save",
+  "confirm": "Confirm",
+  "filter": "Filter"
+}
