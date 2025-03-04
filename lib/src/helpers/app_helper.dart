@@ -109,15 +109,3 @@ void setErrorHandlers() async {
     return true;
   };
 }
-
-void setLocaleUsingConfig() async {
-  await ConfigHelper.init();
-
-  // Set locale
-  Map<String, PlatineAppLocale> locales = {
-    'fr': PlatineAppLocale.fr,
-    'en': PlatineAppLocale.en,
-  };
-
-  LocaleSettings.setLocale(locales[ConfigHelper.getString('language', 'fr')]!);
-}

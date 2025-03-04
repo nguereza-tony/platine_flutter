@@ -7,9 +7,9 @@ output_file_name: translations.g.dart
 locale_handling: true
 flutter_integration: true
 namespaces: true
-translate_var: pft
-enum_name: PlatineAppLocale
-class_name: PlatineTranslations
+translate_var: t
+enum_name: AppLocale
+class_name: Translations
 translation_class_visibility: private
 key_case: camel
 key_map_case: snake

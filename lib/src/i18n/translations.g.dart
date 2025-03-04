@@ -6,7 +6,7 @@
 /// Locales: 2
 /// Strings: 124 (62 per locale)
 ///
-/// Built on 2025-03-04 at 04:06 UTC
+/// Built on 2025-03-04 at 07:33 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint, unused_import
@@ -24,14 +24,14 @@ part 'translations_fr.g.dart';
 /// Supported locales.
 ///
 /// Usage:
-/// - LocaleSettings.setLocale(PlatineAppLocale.fr) // set locale
-/// - Locale locale = PlatineAppLocale.fr.flutterLocale // get flutter locale from enum
-/// - if (LocaleSettings.currentLocale == PlatineAppLocale.fr) // locale check
-enum PlatineAppLocale with BaseAppLocale<PlatineAppLocale, PlatineTranslations> {
+/// - LocaleSettings.setLocale(AppLocale.fr) // set locale
+/// - Locale locale = AppLocale.fr.flutterLocale // get flutter locale from enum
+/// - if (LocaleSettings.currentLocale == AppLocale.fr) // locale check
+enum AppLocale with BaseAppLocale<AppLocale, Translations> {
 	fr(languageCode: 'fr'),
 	en(languageCode: 'en');
 
-	const PlatineAppLocale({
+	const AppLocale({
 		required this.languageCode,
 		this.scriptCode, // ignore: unused_element
 		this.countryCode, // ignore: unused_element
@@ -42,21 +42,21 @@ enum PlatineAppLocale with BaseAppLocale<PlatineAppLocale, PlatineTranslations> 
 	@override final String? countryCode;
 
 	@override
-	Future<PlatineTranslations> build({
+	Future<Translations> build({
 		Map<String, Node>? overrides,
 		PluralResolver? cardinalResolver,
 		PluralResolver? ordinalResolver,
 	}) async {
 		switch (this) {
-			case PlatineAppLocale.fr:
-				return PlatineTranslationsFr(
+			case AppLocale.fr:
+				return TranslationsFr(
 					overrides: overrides,
 					cardinalResolver: cardinalResolver,
 					ordinalResolver: ordinalResolver,
 				);
-			case PlatineAppLocale.en:
+			case AppLocale.en:
 				await l_en.loadLibrary();
-				return l_en.PlatineTranslationsEn(
+				return l_en.TranslationsEn(
 					overrides: overrides,
 					cardinalResolver: cardinalResolver,
 					ordinalResolver: ordinalResolver,
@@ -65,20 +65,20 @@ enum PlatineAppLocale with BaseAppLocale<PlatineAppLocale, PlatineTranslations> 
 	}
 
 	@override
-	PlatineTranslations buildSync({
+	Translations buildSync({
 		Map<String, Node>? overrides,
 		PluralResolver? cardinalResolver,
 		PluralResolver? ordinalResolver,
 	}) {
 		switch (this) {
-			case PlatineAppLocale.fr:
-				return PlatineTranslationsFr(
+			case AppLocale.fr:
+				return TranslationsFr(
 					overrides: overrides,
 					cardinalResolver: cardinalResolver,
 					ordinalResolver: ordinalResolver,
 				);
-			case PlatineAppLocale.en:
-				return l_en.PlatineTranslationsEn(
+			case AppLocale.en:
+				return l_en.TranslationsEn(
 					overrides: overrides,
 					cardinalResolver: cardinalResolver,
 					ordinalResolver: ordinalResolver,
@@ -87,18 +87,18 @@ enum PlatineAppLocale with BaseAppLocale<PlatineAppLocale, PlatineTranslations> 
 	}
 
 	/// Gets current instance managed by [LocaleSettings].
-	PlatineTranslations get translations => LocaleSettings.instance.getTranslations(this);
+	Translations get translations => LocaleSettings.instance.getTranslations(this);
 }
 
 /// Method A: Simple
 ///
 /// No rebuild after locale change.
-/// Translation happens during initialization of the widget (call of pft).
+/// Translation happens during initialization of the widget (call of t).
 /// Configurable via 'translate_var'.
 ///
 /// Usage:
-/// String a = pft.someKey.anotherKey;
-PlatineTranslations get pft => LocaleSettings.instance.currentTranslations;
+/// String a = t.someKey.anotherKey;
+Translations get t => LocaleSettings.instance.currentTranslations;
 
 /// Method B: Advanced
 ///
@@ -112,25 +112,25 @@ PlatineTranslations get pft => LocaleSettings.instance.currentTranslations;
 /// );
 ///
 /// Step 2:
-/// final pft = PlatineTranslations.of(context); // Get pft variable.
-/// String a = pft.someKey.anotherKey; // Use pft variable.
-class TranslationProvider extends BaseTranslationProvider<PlatineAppLocale, PlatineTranslations> {
+/// final t = Translations.of(context); // Get t variable.
+/// String a = t.someKey.anotherKey; // Use t variable.
+class TranslationProvider extends BaseTranslationProvider<AppLocale, Translations> {
 	TranslationProvider({required super.child}) : super(settings: LocaleSettings.instance);
 
-	static InheritedLocaleData<PlatineAppLocale, PlatineTranslations> of(BuildContext context) => InheritedLocaleData.of<PlatineAppLocale, PlatineTranslations>(context);
+	static InheritedLocaleData<AppLocale, Translations> of(BuildContext context) => InheritedLocaleData.of<AppLocale, Translations>(context);
 }
 
 /// Method B shorthand via [BuildContext] extension method.
 /// Configurable via 'translate_var'.
 ///
 /// Usage (e.g. in a widget's build method):
-/// context.pft.someKey.anotherKey
+/// context.t.someKey.anotherKey
 extension BuildContextTranslationsExtension on BuildContext {
-	PlatineTranslations get pft => TranslationProvider.of(this).translations;
+	Translations get t => TranslationProvider.of(this).translations;
 }
 
 /// Manages all translation instances and the current locale
-class LocaleSettings extends BaseFlutterLocaleSettings<PlatineAppLocale, PlatineTranslations> {
+class LocaleSettings extends BaseFlutterLocaleSettings<AppLocale, Translations> {
 	LocaleSettings._() : super(
 		utils: AppLocaleUtils.instance,
 		lazy: true,
@@ -139,12 +139,12 @@ class LocaleSettings extends BaseFlutterLocaleSettings<PlatineAppLocale, Platine
 	static final instance = LocaleSettings._();
 
 	// static aliases (checkout base methods for documentation)
-	static PlatineAppLocale get currentLocale => instance.currentLocale;
-	static Stream<PlatineAppLocale> getLocaleStream() => instance.getLocaleStream();
-	static Future<PlatineAppLocale> setLocale(PlatineAppLocale locale, {bool? listenToDeviceLocale = false}) => instance.setLocale(locale, listenToDeviceLocale: listenToDeviceLocale);
-	static Future<PlatineAppLocale> setLocaleRaw(String rawLocale, {bool? listenToDeviceLocale = false}) => instance.setLocaleRaw(rawLocale, listenToDeviceLocale: listenToDeviceLocale);
-	static Future<PlatineAppLocale> useDeviceLocale() => instance.useDeviceLocale();
-	static Future<void> setPluralResolver({String? language, PlatineAppLocale? locale, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver}) => instance.setPluralResolver(
+	static AppLocale get currentLocale => instance.currentLocale;
+	static Stream<AppLocale> getLocaleStream() => instance.getLocaleStream();
+	static Future<AppLocale> setLocale(AppLocale locale, {bool? listenToDeviceLocale = false}) => instance.setLocale(locale, listenToDeviceLocale: listenToDeviceLocale);
+	static Future<AppLocale> setLocaleRaw(String rawLocale, {bool? listenToDeviceLocale = false}) => instance.setLocaleRaw(rawLocale, listenToDeviceLocale: listenToDeviceLocale);
+	static Future<AppLocale> useDeviceLocale() => instance.useDeviceLocale();
+	static Future<void> setPluralResolver({String? language, AppLocale? locale, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver}) => instance.setPluralResolver(
 		language: language,
 		locale: locale,
 		cardinalResolver: cardinalResolver,
@@ -152,10 +152,10 @@ class LocaleSettings extends BaseFlutterLocaleSettings<PlatineAppLocale, Platine
 	);
 
 	// synchronous versions
-	static PlatineAppLocale setLocaleSync(PlatineAppLocale locale, {bool? listenToDeviceLocale = false}) => instance.setLocaleSync(locale, listenToDeviceLocale: listenToDeviceLocale);
-	static PlatineAppLocale setLocaleRawSync(String rawLocale, {bool? listenToDeviceLocale = false}) => instance.setLocaleRawSync(rawLocale, listenToDeviceLocale: listenToDeviceLocale);
-	static PlatineAppLocale useDeviceLocaleSync() => instance.useDeviceLocaleSync();
-	static void setPluralResolverSync({String? language, PlatineAppLocale? locale, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver}) => instance.setPluralResolverSync(
+	static AppLocale setLocaleSync(AppLocale locale, {bool? listenToDeviceLocale = false}) => instance.setLocaleSync(locale, listenToDeviceLocale: listenToDeviceLocale);
+	static AppLocale setLocaleRawSync(String rawLocale, {bool? listenToDeviceLocale = false}) => instance.setLocaleRawSync(rawLocale, listenToDeviceLocale: listenToDeviceLocale);
+	static AppLocale useDeviceLocaleSync() => instance.useDeviceLocaleSync();
+	static void setPluralResolverSync({String? language, AppLocale? locale, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver}) => instance.setPluralResolverSync(
 		language: language,
 		locale: locale,
 		cardinalResolver: cardinalResolver,
@@ -164,18 +164,18 @@ class LocaleSettings extends BaseFlutterLocaleSettings<PlatineAppLocale, Platine
 }
 
 /// Provides utility functions without any side effects.
-class AppLocaleUtils extends BaseAppLocaleUtils<PlatineAppLocale, PlatineTranslations> {
+class AppLocaleUtils extends BaseAppLocaleUtils<AppLocale, Translations> {
 	AppLocaleUtils._() : super(
-		baseLocale: PlatineAppLocale.fr,
-		locales: PlatineAppLocale.values,
+		baseLocale: AppLocale.fr,
+		locales: AppLocale.values,
 	);
 
 	static final instance = AppLocaleUtils._();
 
 	// static aliases (checkout base methods for documentation)
-	static PlatineAppLocale parse(String rawLocale) => instance.parse(rawLocale);
-	static PlatineAppLocale parseLocaleParts({required String languageCode, String? scriptCode, String? countryCode}) => instance.parseLocaleParts(languageCode: languageCode, scriptCode: scriptCode, countryCode: countryCode);
-	static PlatineAppLocale findDeviceLocale() => instance.findDeviceLocale();
+	static AppLocale parse(String rawLocale) => instance.parse(rawLocale);
+	static AppLocale parseLocaleParts({required String languageCode, String? scriptCode, String? countryCode}) => instance.parseLocaleParts(languageCode: languageCode, scriptCode: scriptCode, countryCode: countryCode);
+	static AppLocale findDeviceLocale() => instance.findDeviceLocale();
 	static List<Locale> get supportedLocales => instance.supportedLocales;
 	static List<String> get supportedLocalesRaw => instance.supportedLocalesRaw;
 }

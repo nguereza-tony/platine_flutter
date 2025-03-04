@@ -21,6 +21,5 @@ export 'src/helpers/config_helper.dart';
 export 'src/helpers/logger_helper.dart';
 export 'src/helpers/notification_helper.dart';
 export 'src/helpers/null_logger.dart';
-export 'src/i18n/translations.g.dart';
 export 'src/validators/base_validator.dart';
 export 'src/validators/rules/fast_matches_validator.dart';

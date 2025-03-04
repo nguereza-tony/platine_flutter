@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:platine_flutter/platine_flutter.dart';
+import 'package:platine_flutter/platine_i18n.dart';
 import 'package:rest_api_client/rest_api_client.dart';
 import 'package:simple_dart_logger/simple_dart_logger.dart';
 
@@ -141,7 +142,7 @@ class RestClient {
 
     if (errorMessage != null &&
         ignoreNotifyStatusCodes.contains(statusCode) == false) {
-      NotificationHelper.error(errorMessage, pft.errors.error, 5);
+      NotificationHelper.error(errorMessage, t.errors.error, 5);
     }
 
     int code = e.response?.data['code'] ?? -1;
@@ -162,7 +163,7 @@ class RestClient {
         ignoreNotifyStatusCodes.contains(statusCode) == false) {
       NotificationHelper.error(
         message,
-        pft.errors.error,
+        t.errors.error,
         5,
       );
     }
@@ -175,13 +176,13 @@ class RestClient {
   /// Return The [DioExceptionType] errors description for each type
   Map<DioExceptionType, String> _getDioErrorMaps() {
     return {
-      DioExceptionType.connectionError: pft.errors.api.connectionError,
-      DioExceptionType.connectionTimeout: pft.errors.api.connectionTimeout,
-      DioExceptionType.sendTimeout: pft.errors.api.sendTimeout,
-      DioExceptionType.receiveTimeout: pft.errors.api.receiveTimeout,
-      DioExceptionType.badCertificate: pft.errors.api.badCertificate,
-      DioExceptionType.cancel: pft.errors.api.requestCancel,
-      DioExceptionType.unknown: pft.errors.api.unknownError,
+      DioExceptionType.connectionError: t.errors.api.connectionError,
+      DioExceptionType.connectionTimeout: t.errors.api.connectionTimeout,
+      DioExceptionType.sendTimeout: t.errors.api.sendTimeout,
+      DioExceptionType.receiveTimeout: t.errors.api.receiveTimeout,
+      DioExceptionType.badCertificate: t.errors.api.badCertificate,
+      DioExceptionType.cancel: t.errors.api.requestCancel,
+      DioExceptionType.unknown: t.errors.api.unknownError,
     };
   }
 }
