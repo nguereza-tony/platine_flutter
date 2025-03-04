@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:platine_flutter/platine_flutter.dart';
+import 'package:platine_flutter/platine_i18n.dart';
 import 'package:simple_dart_logger/simple_dart_logger.dart';
 
 String formatNumber(dynamic value, [int decimal = 2]) {
@@ -108,4 +109,22 @@ void setErrorHandlers() async {
 
     return true;
   };
+}
+
+/// Set the application locale using configuration
+Future<void> setAppLocale() async {
+  await ConfigHelper.init();
+
+  // Set locale
+  Map<String, AppLocale> locales = {
+    'fr': AppLocale.fr,
+    'en': AppLocale.en,
+  };
+
+  LocaleSettings.setLocale(
+    locales[ConfigHelper.getString(
+      'language',
+      'fr',
+    )]!,
+  );
 }
