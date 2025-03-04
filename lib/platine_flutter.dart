@@ -14,6 +14,8 @@ export 'src/components/grey_label.dart';
 export 'src/components/indicator.dart';
 export 'src/components/item_label.dart';
 export 'src/components/loading_button.dart';
+export 'src/components/profile_action.dart';
+export 'src/components/profile_item.dart';
 export 'src/constants/colors.dart';
 export 'src/helpers/app_helper.dart';
 export 'src/helpers/auth_helper.dart';
