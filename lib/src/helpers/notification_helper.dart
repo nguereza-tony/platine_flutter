@@ -20,6 +20,25 @@ class NotificationHelper {
     );
   }
 
+
+  static void warning(String message, String? title, int duration) {
+    _showMessage(
+      message,
+      title,
+      duration,
+      ToastificationType.warning,
+    );
+  }
+
+  static void info(String message, String? title, int duration) {
+    _showMessage(
+      message,
+      title,
+      duration,
+      ToastificationType.info,
+    );
+  }
+
   static void _showMessage(
     String message,
     String? title,
