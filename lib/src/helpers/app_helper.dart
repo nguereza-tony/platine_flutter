@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -127,4 +128,17 @@ Future<void> setAppLocale() async {
       'fr',
     )]!,
   );
+}
+
+/// Base64 String decode
+String base64Decode(String str) {
+  var data = base64.normalize(str);
+  Uint8List decodedBytes = base64.decoder.convert(data);
+  return utf8.decode(decodedBytes, allowMalformed: true);
+}
+
+/// Base64 String encode
+String base64Encode(String str) {
+  var res = base64.encoder.convert(str.codeUnits);
+  return base64.normalize(res);
 }
