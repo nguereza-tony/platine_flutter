@@ -1,0 +1,12 @@
+{
+  "dashboard": "Home",
+  "login": "Authentication",
+  "user_edit": "Update your account",
+  "user_profile": "My account",
+  "reset_password": "Forgotten password",
+  "create_password": "Create a password",
+  "edit_password": "Change your password",
+  "setting": "Setting",
+  "about": "About",
+  "filter": "Filter"
+}

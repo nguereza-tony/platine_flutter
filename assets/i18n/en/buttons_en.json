@@ -1,7 +1,7 @@
 {
-  "login": "Connection",
-  "create_password": "Create password",
-  "edit_password": "Change password",
+  "login": "Login",
+  "create_password": "Create Password",
+  "edit_password": "Change Password",
   "edit": "Edit",
   "next": "Next",
   "validate": "Validate",

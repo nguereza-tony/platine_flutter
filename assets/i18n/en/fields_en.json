@@ -1,0 +1,12 @@
+{
+  "start_date": "Start date",
+  "end_date": "End date",
+  "date": "Date",
+  "description": "Description",
+  "username": "Username",
+  "email": "Email",
+  "password": "Password",
+  "confirm_password": "Confirm password",
+  "lastname": "Lastname",
+  "firstname": "Firstname"
+}

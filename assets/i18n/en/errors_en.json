@@ -1,0 +1,40 @@
+{
+  "error": "Error",
+  "validator": {
+    "required": "This field is required",
+    "number": "This field must be a number",
+    "password": "This field must be a valid password",
+    "password_min_length": "Password must contain at least {length: int} characters",
+    "password_uppercase": "Password must contain at least one uppercase letter",
+    "password_lowercase": "Password must contain at least one lowercase letter",
+    "password_special_chars": "Password must contain at least one special character",
+    "password_numbers": "Password must contain at least one number",
+    "email": "This field must be an email address",
+    "alpha_numeric": "This field must have only numbers/letters",
+    "matches": "This field must be the same as the {field: String} field",
+    "exact_length": "This field must have exactly {length: int} characters",
+    "min_length": "This field must have at least {length: int} characters",
+    "max_length": "This field must have at most {length: int} characters"
+  },
+  "api": {
+    "connection_error": "Error connecting to the server",
+    "connection_timeout": "Connection timeout",
+    "send_timeout": "Timed out while sending request",
+    "receive_timeout": "Timed out while receiving response",
+    "bad_certificate": "Bad certificate configuration",
+    "request_cancel": "Request is canceled",
+    "unknown_error": "Unknown error",
+    "incorrect_user_password": "Incorrect password",
+    "incorrect_verification_code": "Incorrect verification code",
+    "user_is_locked": "User account is locked",
+    "user_not_found": "User account does not exist",
+    "user_email_not_found": "Email address does not exist",
+    "record_not_found": "This record does not exist",
+    "user_refresh_token_not_found": "Refresh token does not exist",
+    "username_already_exist": "Username already exists",
+    "user_email_already_exist": "Email address already exists",
+    "user_account_already_exist": "User account already exists",
+    "internal_server_error": "Internal server error",
+    "auth": "Wrong login information"
+  }
+}

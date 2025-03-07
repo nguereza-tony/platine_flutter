@@ -24,7 +24,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 		    overrides: overrides ?? {},
 		    cardinalResolver: cardinalResolver,
 		    ordinalResolver: ordinalResolver,
-		    s: $calc0(4, 14, 67),
+		    s: $calc0(0, 14, 93),
 		  );
 
 	/// Metadata for the translations of <fr>.
@@ -49,17 +49,17 @@ class TranslationsButtonsFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get login => _root.$meta.d([32, 12, 13, 13, 6, 27, 10, 12, 13]);
-	String get createPassword => _root.$meta.d([32, 17, 138, 6, 17, 67, 15, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get editPassword => _root.$meta.d([32, 11, 2, 13, 4, 6, 17, 67, 15, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get edit => _root.$meta.d([46, 12, 7, 10, 5, 10, 6, 17]);
-	String get next => _root.$meta.d([48, 22, 10, 21, 2, 13, 23]);
-	String get validate => _root.$meta.d([53, 2, 15, 10, 7, 6, 17]);
-	String get delete => _root.$meta.d([48, 22, 19, 19, 17, 10, 14, 6, 17]);
-	String get cancel => _root.$meta.d([34, 13, 13, 22, 15, 6, 17]);
-	String get save => _root.$meta.d([38, 13, 17, 6, 4, 10, 16, 23, 17, 6, 17]);
-	String get confirm => _root.$meta.d([32, 12, 13, 5, 10, 17, 14, 6, 17]);
-	String get filter => _root.$meta.d([37, 10, 15, 23, 17, 6, 17]);
+	String get login => _root.$meta.d([2, 46, 47, 47, 36, 57, 40, 46, 47]);
+	String get createPassword => _root.$meta.d([2, 51, 168, 36, 51, 97, 45, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get editPassword => _root.$meta.d([2, 41, 32, 47, 38, 36, 51, 97, 45, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get edit => _root.$meta.d([12, 46, 37, 40, 39, 40, 36, 51]);
+	String get next => _root.$meta.d([18, 52, 40, 55, 32, 47, 53]);
+	String get validate => _root.$meta.d([23, 32, 45, 40, 37, 36, 51]);
+	String get delete => _root.$meta.d([18, 52, 49, 49, 51, 40, 44, 36, 51]);
+	String get cancel => _root.$meta.d([0, 47, 47, 52, 45, 36, 51]);
+	String get save => _root.$meta.d([4, 47, 51, 36, 38, 40, 50, 53, 51, 36, 51]);
+	String get confirm => _root.$meta.d([2, 46, 47, 39, 40, 51, 44, 36, 51]);
+	String get filter => _root.$meta.d([7, 40, 45, 53, 51, 36, 51]);
 }
 
 // Path: errors
@@ -69,7 +69,7 @@ class TranslationsErrorsFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get error => _root.$meta.d([38, 17, 17, 6, 22, 17]);
+	String get error => _root.$meta.d([4, 51, 51, 36, 52, 51]);
 	late final TranslationsErrorsValidatorFr validator = TranslationsErrorsValidatorFr.internal(_root);
 	late final TranslationsErrorsApiFr api = TranslationsErrorsApiFr.internal(_root);
 }
@@ -81,16 +81,16 @@ class TranslationsFieldsFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get startDate => _root.$meta.d([39, 2, 23, 6, 67, 7, 6, 67, 7, 138, 1, 22, 23]);
-	String get endDate => _root.$meta.d([39, 2, 23, 6, 67, 7, 6, 67, 5, 10, 13]);
-	String get date => _root.$meta.d([39, 2, 23, 6]);
-	String get description => _root.$meta.d([39, 6, 16, 0, 17, 10, 19, 23, 10, 12, 13]);
-	String get username => _root.$meta.d([45, 12, 14, 67, 7, 68, 22, 23, 10, 15, 10, 16, 2, 23, 6, 22, 17]);
-	String get email => _root.$meta.d([38, 78, 14, 2, 10, 15]);
-	String get password => _root.$meta.d([46, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get confirmPassword => _root.$meta.d([32, 12, 13, 5, 10, 17, 14, 2, 23, 10, 12, 13, 67, 7, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get lastname => _root.$meta.d([45, 12, 14, 67, 7, 6, 67, 5, 2, 14, 10, 15, 15, 6]);
-	String get firstname => _root.$meta.d([51, 17, 138, 13, 12, 14]);
+	String get startDate => _root.$meta.d([5, 32, 53, 36, 97, 37, 36, 97, 37, 168, 35, 52, 53]);
+	String get endDate => _root.$meta.d([5, 32, 53, 36, 97, 37, 36, 97, 39, 40, 47]);
+	String get date => _root.$meta.d([5, 32, 53, 36]);
+	String get description => _root.$meta.d([5, 36, 50, 34, 51, 40, 49, 53, 40, 46, 47]);
+	String get username => _root.$meta.d([15, 46, 44, 97, 37, 102, 52, 53, 40, 45, 40, 50, 32, 53, 36, 52, 51]);
+	String get email => _root.$meta.d([4, 108, 44, 32, 40, 45]);
+	String get password => _root.$meta.d([12, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get confirmPassword => _root.$meta.d([2, 46, 47, 39, 40, 51, 44, 32, 53, 40, 46, 47, 97, 37, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get lastname => _root.$meta.d([15, 46, 44, 97, 37, 36, 97, 39, 32, 44, 40, 45, 45, 36]);
+	String get firstname => _root.$meta.d([17, 51, 168, 47, 46, 44]);
 }
 
 // Path: labels
@@ -100,10 +100,10 @@ class TranslationsLabelsFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get noRecord => _root.$meta.d([34, 22, 0, 22, 13, 67, 6, 13, 17, 6, 4, 10, 16, 23, 17, 6, 14, 6, 13, 23]);
-	String get filterSelectAll => _root.$meta.d([78, 78, 67, 55, 12, 22, 23, 67, 78, 78]);
-	String get securities => _root.$meta.d([48, 138, 0, 22, 17, 10, 23, 138, 16]);
-	String get helpSupports => _root.$meta.d([34, 10, 7, 6, 16, 67, 69, 67, 48, 22, 19, 19, 12, 17, 23, 16]);
+	String get noRecord => _root.$meta.d([0, 52, 34, 52, 47, 97, 36, 47, 51, 36, 38, 40, 50, 53, 51, 36, 44, 36, 47, 53]);
+	String get filterSelectAll => _root.$meta.d([108, 108, 97, 21, 46, 52, 53, 97, 108, 108]);
+	String get securities => _root.$meta.d([18, 168, 34, 52, 51, 40, 53, 168, 50]);
+	String get helpSupports => _root.$meta.d([0, 40, 37, 36, 50, 97, 103, 97, 18, 52, 49, 49, 46, 51, 53, 50]);
 	late final TranslationsLabelsDialogFr dialog = TranslationsLabelsDialogFr.internal(_root);
 	late final TranslationsLabelsActionsFr actions = TranslationsLabelsActionsFr.internal(_root);
 	late final TranslationsLabelsAppSettingFr appSetting = TranslationsLabelsAppSettingFr.internal(_root);
@@ -116,11 +116,11 @@ class TranslationsMessagesFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get loginSuccess => _root.$meta.d([53, 12, 22, 16, 67, 137, 23, 6, 16, 67, 0, 12, 13, 13, 6, 0, 23, 138, 67, 2, 21, 6, 0, 67, 16, 22, 0, 0, 139, 16]);
-	String get logoutSuccess => _root.$meta.d([53, 12, 22, 16, 67, 137, 23, 6, 16, 67, 7, 138, 0, 12, 13, 13, 6, 0, 23, 138, 67, 2, 21, 6, 0, 67, 16, 22, 0, 0, 139, 16]);
-	String get userEditSuccess => _root.$meta.d([53, 12, 23, 17, 6, 67, 0, 12, 14, 19, 23, 6, 67, 2, 67, 138, 23, 138, 67, 14, 12, 7, 10, 5, 10, 138, 67, 2, 21, 6, 0, 67, 16, 22, 0, 0, 139, 16]);
-	String get userEditPasswordSuccess => _root.$meta.d([53, 12, 23, 17, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 2, 67, 138, 23, 138, 67, 14, 12, 7, 10, 5, 10, 138, 67, 2, 21, 6, 0, 67, 16, 22, 0, 0, 139, 16]);
-	String get resetPasswordSuccess => _root.$meta.d([53, 12, 23, 17, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 2, 67, 138, 23, 138, 67, 14, 12, 7, 10, 5, 10, 138, 67, 2, 21, 6, 0, 67, 16, 22, 0, 0, 139, 16]);
+	String get loginSuccess => _root.$meta.d([23, 46, 52, 50, 97, 171, 53, 36, 50, 97, 34, 46, 47, 47, 36, 34, 53, 168, 97, 32, 55, 36, 34, 97, 50, 52, 34, 34, 169, 50]);
+	String get logoutSuccess => _root.$meta.d([23, 46, 52, 50, 97, 171, 53, 36, 50, 97, 37, 168, 34, 46, 47, 47, 36, 34, 53, 168, 97, 32, 55, 36, 34, 97, 50, 52, 34, 34, 169, 50]);
+	String get userEditSuccess => _root.$meta.d([23, 46, 53, 51, 36, 97, 34, 46, 44, 49, 53, 36, 97, 32, 97, 168, 53, 168, 97, 44, 46, 37, 40, 39, 40, 168, 97, 32, 55, 36, 34, 97, 50, 52, 34, 34, 169, 50]);
+	String get userEditPasswordSuccess => _root.$meta.d([23, 46, 53, 51, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 32, 97, 168, 53, 168, 97, 44, 46, 37, 40, 39, 40, 168, 97, 32, 55, 36, 34, 97, 50, 52, 34, 34, 169, 50]);
+	String get resetPasswordSuccess => _root.$meta.d([23, 46, 53, 51, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 32, 97, 168, 53, 168, 97, 44, 46, 37, 40, 39, 40, 168, 97, 32, 55, 36, 34, 97, 50, 52, 34, 34, 169, 50]);
 }
 
 // Path: placeholders
@@ -130,20 +130,20 @@ class TranslationsPlaceholdersFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get username => _root.$meta.d([45, 12, 14, 67, 7, 68, 22, 23, 10, 15, 10, 16, 2, 23, 6, 22, 17]);
-	String get email => _root.$meta.d([38, 78, 14, 2, 10, 15]);
-	String get lastname => _root.$meta.d([45, 12, 14, 67, 7, 6, 67, 5, 2, 14, 10, 15, 15, 6]);
-	String get firstname => _root.$meta.d([51, 17, 138, 13, 12, 14]);
-	String get newPassword => _root.$meta.d([45, 12, 22, 21, 6, 2, 22, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get password => _root.$meta.d([46, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get currentPassword => _root.$meta.d([46, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 2, 0, 23, 22, 6, 15]);
-	String get confirmPassword => _root.$meta.d([32, 12, 13, 5, 10, 17, 14, 2, 23, 10, 12, 13, 67, 7, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get validationCode => _root.$meta.d([32, 12, 7, 6, 67, 7, 6, 67, 21, 2, 15, 10, 7, 2, 23, 10, 12, 13]);
-	String get startDate => _root.$meta.d([39, 2, 23, 6, 67, 7, 6, 67, 7, 138, 1, 22, 23]);
-	String get endDate => _root.$meta.d([39, 2, 23, 6, 67, 7, 6, 67, 5, 10, 13]);
-	String get date => _root.$meta.d([39, 2, 23, 6]);
-	String get search => _root.$meta.d([49, 6, 0, 11, 6, 17, 0, 11, 6, 17]);
-	String get description => _root.$meta.d([39, 6, 16, 0, 17, 10, 19, 23, 10, 12, 13]);
+	String get username => _root.$meta.d([15, 46, 44, 97, 37, 102, 52, 53, 40, 45, 40, 50, 32, 53, 36, 52, 51]);
+	String get email => _root.$meta.d([4, 108, 44, 32, 40, 45]);
+	String get lastname => _root.$meta.d([15, 46, 44, 97, 37, 36, 97, 39, 32, 44, 40, 45, 45, 36]);
+	String get firstname => _root.$meta.d([17, 51, 168, 47, 46, 44]);
+	String get newPassword => _root.$meta.d([15, 46, 52, 55, 36, 32, 52, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get password => _root.$meta.d([12, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get currentPassword => _root.$meta.d([12, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 32, 34, 53, 52, 36, 45]);
+	String get confirmPassword => _root.$meta.d([2, 46, 47, 39, 40, 51, 44, 32, 53, 40, 46, 47, 97, 37, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get validationCode => _root.$meta.d([2, 46, 37, 36, 97, 37, 36, 97, 55, 32, 45, 40, 37, 32, 53, 40, 46, 47]);
+	String get startDate => _root.$meta.d([5, 32, 53, 36, 97, 37, 36, 97, 37, 168, 35, 52, 53]);
+	String get endDate => _root.$meta.d([5, 32, 53, 36, 97, 37, 36, 97, 39, 40, 47]);
+	String get date => _root.$meta.d([5, 32, 53, 36]);
+	String get search => _root.$meta.d([19, 36, 34, 41, 36, 51, 34, 41, 36, 51]);
+	String get description => _root.$meta.d([5, 36, 50, 34, 51, 40, 49, 53, 40, 46, 47]);
 }
 
 // Path: titles
@@ -153,16 +153,16 @@ class TranslationsTitlesFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get dashboard => _root.$meta.d([34, 0, 0, 22, 6, 10, 15]);
-	String get login => _root.$meta.d([34, 22, 23, 11, 6, 13, 23, 10, 5, 10, 0, 2, 23, 10, 12, 13]);
-	String get userEdit => _root.$meta.d([46, 12, 7, 10, 5, 10, 6, 17, 67, 21, 12, 23, 17, 6, 67, 0, 12, 14, 19, 23, 6]);
-	String get userProfile => _root.$meta.d([46, 12, 13, 67, 0, 12, 14, 19, 23, 6]);
-	String get resetPassword => _root.$meta.d([46, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 12, 22, 1, 15, 10, 138]);
-	String get createPassword => _root.$meta.d([32, 17, 138, 6, 17, 67, 22, 13, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get editPassword => _root.$meta.d([46, 12, 7, 10, 5, 10, 6, 17, 67, 21, 12, 23, 17, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get setting => _root.$meta.d([51, 2, 17, 2, 14, 139, 23, 17, 6]);
-	String get about => _root.$meta.d([34, 67, 19, 17, 12, 19, 12, 16]);
-	String get filter => _root.$meta.d([37, 10, 15, 23, 17, 6, 17]);
+	String get dashboard => _root.$meta.d([0, 34, 34, 52, 36, 40, 45]);
+	String get login => _root.$meta.d([0, 52, 53, 41, 36, 47, 53, 40, 39, 40, 34, 32, 53, 40, 46, 47]);
+	String get userEdit => _root.$meta.d([12, 46, 37, 40, 39, 40, 36, 51, 97, 55, 46, 53, 51, 36, 97, 34, 46, 44, 49, 53, 36]);
+	String get userProfile => _root.$meta.d([12, 46, 47, 97, 34, 46, 44, 49, 53, 36]);
+	String get resetPassword => _root.$meta.d([12, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 46, 52, 35, 45, 40, 168]);
+	String get createPassword => _root.$meta.d([2, 51, 168, 36, 51, 97, 52, 47, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get editPassword => _root.$meta.d([12, 46, 37, 40, 39, 40, 36, 51, 97, 55, 46, 53, 51, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get setting => _root.$meta.d([17, 32, 51, 32, 44, 169, 53, 51, 36]);
+	String get about => _root.$meta.d([0, 97, 49, 51, 46, 49, 46, 50]);
+	String get filter => _root.$meta.d([7, 40, 45, 53, 51, 36, 51]);
 }
 
 // Path: errors.validator
@@ -172,20 +172,20 @@ class TranslationsErrorsValidatorFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get required => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 6, 16, 23, 67, 12, 1, 15, 10, 4, 2, 23, 12, 10, 17, 6]);
-	String get number => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 137, 23, 17, 6, 67, 22, 13, 67, 13, 12, 14, 1, 17, 6]);
-	String get password => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 137, 23, 17, 6, 67, 22, 13, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 21, 2, 15, 10, 7, 6]);
-	String passwordMinLength({required int length}) => _root.$meta.d([47, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 7, 12, 10, 23, 67, 2, 21, 12, 10, 17, 67, 2, 22, 67, 14, 12, 10, 13, 16, 67]) + length.toString() + _root.$meta.d([67, 0, 2, 17, 2, 0, 23, 139, 17, 6, 16]);
-	String get passwordUppercase => _root.$meta.d([47, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 7, 12, 10, 23, 67, 0, 12, 13, 23, 6, 13, 10, 17, 67, 2, 22, 67, 14, 12, 10, 13, 16, 67, 22, 13, 6, 67, 15, 6, 23, 23, 17, 6, 67, 14, 2, 9, 22, 16, 0, 22, 15, 6]);
-	String get passwordLowercase => _root.$meta.d([47, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 7, 12, 10, 23, 67, 0, 12, 13, 23, 6, 13, 10, 17, 67, 2, 22, 67, 14, 12, 10, 13, 16, 67, 22, 13, 6, 67, 15, 6, 23, 23, 17, 6, 67, 14, 10, 13, 22, 16, 0, 22, 15, 6]);
-	String get passwordSpecialChars => _root.$meta.d([47, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 7, 12, 10, 23, 67, 0, 12, 13, 23, 6, 13, 10, 17, 67, 2, 22, 67, 14, 12, 10, 13, 16, 67, 22, 13, 67, 0, 2, 17, 2, 0, 23, 139, 17, 6, 67, 16, 19, 138, 0, 10, 2, 15]);
-	String get passwordNumbers => _root.$meta.d([47, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 7, 12, 10, 23, 67, 0, 12, 13, 23, 6, 13, 10, 17, 67, 2, 22, 67, 14, 12, 10, 13, 16, 67, 22, 13, 67, 0, 11, 10, 5, 5, 17, 6]);
-	String get email => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 137, 23, 17, 6, 67, 22, 13, 6, 67, 2, 7, 17, 6, 16, 16, 6, 67, 38, 78, 14, 2, 10, 15]);
-	String get alphaNumeric => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 2, 21, 12, 10, 17, 67, 22, 13, 10, 18, 22, 6, 14, 6, 13, 23, 67, 15, 6, 16, 67, 0, 11, 10, 5, 5, 17, 6, 16, 76, 15, 6, 23, 23, 17, 6, 16]);
-	String matches({required String field}) => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 137, 23, 17, 6, 67, 10, 7, 6, 13, 23, 10, 18, 22, 6, 67, 2, 22, 67, 0, 11, 2, 14, 19, 67]) + field.toString();
-	String exactLength({required int length}) => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 2, 21, 12, 10, 17, 67, 6, 27, 2, 0, 23, 6, 14, 6, 13, 23, 67]) + length.toString() + _root.$meta.d([67, 0, 2, 17, 2, 0, 23, 139, 17, 6, 16]);
-	String minLength({required int length}) => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 2, 21, 12, 10, 17, 67, 2, 22, 67, 14, 12, 10, 13, 16, 67]) + length.toString() + _root.$meta.d([67, 0, 2, 17, 2, 0, 23, 139, 17, 6, 16]);
-	String maxLength({required int length}) => _root.$meta.d([32, 6, 67, 0, 11, 2, 14, 19, 67, 7, 12, 10, 23, 67, 2, 21, 12, 10, 17, 67, 2, 22, 67, 14, 2, 27, 10, 14, 22, 14, 67]) + length.toString() + _root.$meta.d([67, 0, 2, 17, 2, 0, 23, 139, 17, 6, 16]);
+	String get required => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 36, 50, 53, 97, 46, 35, 45, 40, 38, 32, 53, 46, 40, 51, 36]);
+	String get number => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 171, 53, 51, 36, 97, 52, 47, 97, 47, 46, 44, 35, 51, 36]);
+	String get password => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 171, 53, 51, 36, 97, 52, 47, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 55, 32, 45, 40, 37, 36]);
+	String passwordMinLength({required int length}) => _root.$meta.d([13, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 37, 46, 40, 53, 97, 32, 55, 46, 40, 51, 97, 32, 52, 97, 44, 46, 40, 47, 50, 97]) + length.toString() + _root.$meta.d([97, 34, 32, 51, 32, 34, 53, 169, 51, 36, 50]);
+	String get passwordUppercase => _root.$meta.d([13, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 37, 46, 40, 53, 97, 34, 46, 47, 53, 36, 47, 40, 51, 97, 32, 52, 97, 44, 46, 40, 47, 50, 97, 52, 47, 36, 97, 45, 36, 53, 53, 51, 36, 97, 44, 32, 43, 52, 50, 34, 52, 45, 36]);
+	String get passwordLowercase => _root.$meta.d([13, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 37, 46, 40, 53, 97, 34, 46, 47, 53, 36, 47, 40, 51, 97, 32, 52, 97, 44, 46, 40, 47, 50, 97, 52, 47, 36, 97, 45, 36, 53, 53, 51, 36, 97, 44, 40, 47, 52, 50, 34, 52, 45, 36]);
+	String get passwordSpecialChars => _root.$meta.d([13, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 37, 46, 40, 53, 97, 34, 46, 47, 53, 36, 47, 40, 51, 97, 32, 52, 97, 44, 46, 40, 47, 50, 97, 52, 47, 97, 34, 32, 51, 32, 34, 53, 169, 51, 36, 97, 50, 49, 168, 34, 40, 32, 45]);
+	String get passwordNumbers => _root.$meta.d([13, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 37, 46, 40, 53, 97, 34, 46, 47, 53, 36, 47, 40, 51, 97, 32, 52, 97, 44, 46, 40, 47, 50, 97, 52, 47, 97, 34, 41, 40, 39, 39, 51, 36]);
+	String get email => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 171, 53, 51, 36, 97, 52, 47, 36, 97, 32, 37, 51, 36, 50, 50, 36, 97, 4, 108, 44, 32, 40, 45]);
+	String get alphaNumeric => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 32, 55, 46, 40, 51, 97, 52, 47, 40, 48, 52, 36, 44, 36, 47, 53, 97, 45, 36, 50, 97, 34, 41, 40, 39, 39, 51, 36, 50, 110, 45, 36, 53, 53, 51, 36, 50]);
+	String matches({required String field}) => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 171, 53, 51, 36, 97, 40, 37, 36, 47, 53, 40, 48, 52, 36, 97, 32, 52, 97, 34, 41, 32, 44, 49, 97]) + field.toString();
+	String exactLength({required int length}) => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 32, 55, 46, 40, 51, 97, 36, 57, 32, 34, 53, 36, 44, 36, 47, 53, 97]) + length.toString() + _root.$meta.d([97, 34, 32, 51, 32, 34, 53, 169, 51, 36, 50]);
+	String minLength({required int length}) => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 32, 55, 46, 40, 51, 97, 32, 52, 97, 44, 46, 40, 47, 50, 97]) + length.toString() + _root.$meta.d([97, 34, 32, 51, 32, 34, 53, 169, 51, 36, 50]);
+	String maxLength({required int length}) => _root.$meta.d([2, 36, 97, 34, 41, 32, 44, 49, 97, 37, 46, 40, 53, 97, 32, 55, 46, 40, 51, 97, 32, 52, 97, 44, 32, 57, 40, 44, 52, 44, 97]) + length.toString() + _root.$meta.d([97, 34, 32, 51, 32, 34, 53, 169, 51, 36, 50]);
 }
 
 // Path: errors.api
@@ -195,25 +195,25 @@ class TranslationsErrorsApiFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get connectionError => _root.$meta.d([38, 17, 17, 6, 22, 17, 67, 7, 6, 67, 0, 12, 13, 13, 6, 27, 10, 12, 13, 67, 2, 22, 67, 16, 6, 17, 21, 6, 22, 17]);
-	String get connectionTimeout => _root.$meta.d([47, 6, 67, 7, 138, 15, 2, 10, 67, 7, 6, 67, 0, 12, 13, 13, 6, 27, 10, 12, 13, 67, 6, 16, 23, 67, 7, 138, 19, 2, 16, 16, 138]);
-	String get sendTimeout => _root.$meta.d([47, 6, 67, 7, 138, 15, 2, 10, 67, 7, 68, 2, 23, 23, 6, 13, 23, 6, 67, 16, 68, 6, 16, 23, 67, 138, 0, 12, 22, 15, 138, 67, 15, 12, 17, 16, 67, 7, 6, 67, 15, 68, 6, 13, 21, 12, 10, 67, 7, 6, 67, 15, 2, 67, 7, 6, 14, 2, 13, 7, 6]);
-	String get receiveTimeout => _root.$meta.d([47, 6, 67, 7, 138, 15, 2, 10, 67, 7, 68, 2, 23, 23, 6, 13, 23, 6, 67, 16, 68, 6, 16, 23, 67, 138, 0, 12, 22, 15, 138, 67, 15, 12, 17, 16, 67, 7, 6, 67, 15, 2, 67, 17, 138, 0, 6, 19, 23, 10, 12, 13, 67, 7, 6, 67, 15, 2, 67, 17, 138, 19, 12, 13, 16, 6]);
-	String get badCertificate => _root.$meta.d([46, 2, 22, 21, 2, 10, 16, 6, 67, 0, 12, 13, 5, 10, 4, 22, 17, 2, 23, 10, 12, 13, 67, 7, 22, 67, 0, 6, 17, 23, 10, 5, 10, 0, 2, 23]);
-	String get requestCancel => _root.$meta.d([47, 2, 67, 17, 6, 18, 22, 137, 23, 6, 67, 6, 16, 23, 67, 2, 13, 13, 22, 15, 138, 6]);
-	String get unknownError => _root.$meta.d([38, 17, 17, 6, 22, 17, 67, 10, 13, 0, 12, 13, 13, 22, 6]);
-	String get incorrectUserPassword => _root.$meta.d([46, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 10, 13, 0, 12, 17, 17, 6, 0, 23]);
-	String get incorrectVerificationCode => _root.$meta.d([32, 12, 7, 6, 67, 7, 6, 67, 21, 138, 17, 10, 5, 10, 0, 2, 23, 10, 12, 13, 67, 10, 13, 0, 12, 17, 17, 6, 0, 23]);
-	String get userIsLocked => _root.$meta.d([47, 6, 67, 0, 12, 14, 19, 23, 6, 67, 22, 23, 10, 15, 10, 16, 2, 23, 6, 22, 17, 67, 6, 16, 23, 67, 1, 15, 12, 18, 22, 138]);
-	String get userNotFound => _root.$meta.d([47, 6, 67, 0, 12, 14, 19, 23, 6, 67, 22, 23, 10, 15, 10, 16, 2, 23, 6, 22, 17, 67, 13, 68, 6, 27, 10, 16, 23, 6, 67, 19, 2, 16]);
-	String get userEmailNotFound => _root.$meta.d([47, 68, 2, 7, 17, 6, 16, 16, 6, 67, 38, 78, 14, 2, 10, 15, 67, 13, 68, 6, 27, 10, 16, 23, 6, 67, 19, 2, 16]);
-	String get recordNotFound => _root.$meta.d([32, 6, 23, 67, 6, 13, 17, 6, 4, 10, 16, 23, 17, 6, 14, 6, 13, 23, 67, 13, 68, 6, 27, 10, 16, 23, 6, 67, 19, 2, 16]);
-	String get userRefreshTokenNotFound => _root.$meta.d([47, 6, 67, 9, 6, 23, 12, 13, 67, 7, 6, 67, 17, 2, 5, 17, 2, 141, 0, 11, 10, 16, 16, 6, 14, 6, 13, 23, 67, 13, 68, 6, 27, 10, 16, 23, 6, 67, 19, 2, 16]);
-	String get usernameAlreadyExist => _root.$meta.d([47, 6, 67, 13, 12, 14, 67, 7, 68, 22, 23, 10, 15, 10, 16, 2, 23, 6, 22, 17, 67, 6, 27, 10, 16, 23, 6, 67, 7, 138, 9, 131]);
-	String get userEmailAlreadyExist => _root.$meta.d([47, 68, 2, 7, 17, 6, 16, 16, 6, 67, 38, 78, 14, 2, 10, 15, 67, 6, 27, 10, 16, 23, 6, 67, 7, 138, 9, 131]);
-	String get userAccountAlreadyExist => _root.$meta.d([32, 6, 67, 0, 12, 14, 19, 23, 6, 67, 22, 23, 10, 15, 10, 16, 2, 23, 6, 22, 17, 67, 6, 27, 10, 16, 23, 6, 67, 7, 138, 9, 131]);
-	String get internalServerError => _root.$meta.d([38, 17, 17, 6, 22, 17, 67, 10, 13, 23, 6, 17, 13, 6, 67, 7, 22, 67, 16, 6, 17, 21, 6, 22, 17]);
-	String get auth => _root.$meta.d([46, 2, 22, 21, 2, 10, 16, 6, 16, 67, 10, 13, 5, 12, 17, 14, 2, 23, 10, 12, 13, 16, 67, 7, 6, 67, 0, 12, 13, 13, 6, 27, 10, 12, 13]);
+	String get connectionError => _root.$meta.d([4, 51, 51, 36, 52, 51, 97, 37, 36, 97, 34, 46, 47, 47, 36, 57, 40, 46, 47, 97, 32, 52, 97, 50, 36, 51, 55, 36, 52, 51]);
+	String get connectionTimeout => _root.$meta.d([13, 36, 97, 37, 168, 45, 32, 40, 97, 37, 36, 97, 34, 46, 47, 47, 36, 57, 40, 46, 47, 97, 36, 50, 53, 97, 37, 168, 49, 32, 50, 50, 168]);
+	String get sendTimeout => _root.$meta.d([13, 36, 97, 37, 168, 45, 32, 40, 97, 37, 102, 32, 53, 53, 36, 47, 53, 36, 97, 50, 102, 36, 50, 53, 97, 168, 34, 46, 52, 45, 168, 97, 45, 46, 51, 50, 97, 37, 36, 97, 45, 102, 36, 47, 55, 46, 40, 97, 37, 36, 97, 45, 32, 97, 37, 36, 44, 32, 47, 37, 36]);
+	String get receiveTimeout => _root.$meta.d([13, 36, 97, 37, 168, 45, 32, 40, 97, 37, 102, 32, 53, 53, 36, 47, 53, 36, 97, 50, 102, 36, 50, 53, 97, 168, 34, 46, 52, 45, 168, 97, 45, 46, 51, 50, 97, 37, 36, 97, 45, 32, 97, 51, 168, 34, 36, 49, 53, 40, 46, 47, 97, 37, 36, 97, 45, 32, 97, 51, 168, 49, 46, 47, 50, 36]);
+	String get badCertificate => _root.$meta.d([12, 32, 52, 55, 32, 40, 50, 36, 97, 34, 46, 47, 39, 40, 38, 52, 51, 32, 53, 40, 46, 47, 97, 37, 52, 97, 34, 36, 51, 53, 40, 39, 40, 34, 32, 53]);
+	String get requestCancel => _root.$meta.d([13, 32, 97, 51, 36, 48, 52, 171, 53, 36, 97, 36, 50, 53, 97, 32, 47, 47, 52, 45, 168, 36]);
+	String get unknownError => _root.$meta.d([4, 51, 51, 36, 52, 51, 97, 40, 47, 34, 46, 47, 47, 52, 36]);
+	String get incorrectUserPassword => _root.$meta.d([12, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 40, 47, 34, 46, 51, 51, 36, 34, 53]);
+	String get incorrectVerificationCode => _root.$meta.d([2, 46, 37, 36, 97, 37, 36, 97, 55, 168, 51, 40, 39, 40, 34, 32, 53, 40, 46, 47, 97, 40, 47, 34, 46, 51, 51, 36, 34, 53]);
+	String get userIsLocked => _root.$meta.d([13, 36, 97, 34, 46, 44, 49, 53, 36, 97, 52, 53, 40, 45, 40, 50, 32, 53, 36, 52, 51, 97, 36, 50, 53, 97, 35, 45, 46, 48, 52, 168]);
+	String get userNotFound => _root.$meta.d([13, 36, 97, 34, 46, 44, 49, 53, 36, 97, 52, 53, 40, 45, 40, 50, 32, 53, 36, 52, 51, 97, 47, 102, 36, 57, 40, 50, 53, 36, 97, 49, 32, 50]);
+	String get userEmailNotFound => _root.$meta.d([13, 102, 32, 37, 51, 36, 50, 50, 36, 97, 4, 108, 44, 32, 40, 45, 97, 47, 102, 36, 57, 40, 50, 53, 36, 97, 49, 32, 50]);
+	String get recordNotFound => _root.$meta.d([2, 36, 53, 97, 36, 47, 51, 36, 38, 40, 50, 53, 51, 36, 44, 36, 47, 53, 97, 47, 102, 36, 57, 40, 50, 53, 36, 97, 49, 32, 50]);
+	String get userRefreshTokenNotFound => _root.$meta.d([13, 36, 97, 43, 36, 53, 46, 47, 97, 37, 36, 97, 51, 32, 39, 51, 32, 175, 34, 41, 40, 50, 50, 36, 44, 36, 47, 53, 97, 47, 102, 36, 57, 40, 50, 53, 36, 97, 49, 32, 50]);
+	String get usernameAlreadyExist => _root.$meta.d([13, 36, 97, 47, 46, 44, 97, 37, 102, 52, 53, 40, 45, 40, 50, 32, 53, 36, 52, 51, 97, 36, 57, 40, 50, 53, 36, 97, 37, 168, 43, 161]);
+	String get userEmailAlreadyExist => _root.$meta.d([13, 102, 32, 37, 51, 36, 50, 50, 36, 97, 4, 108, 44, 32, 40, 45, 97, 36, 57, 40, 50, 53, 36, 97, 37, 168, 43, 161]);
+	String get userAccountAlreadyExist => _root.$meta.d([2, 36, 97, 34, 46, 44, 49, 53, 36, 97, 52, 53, 40, 45, 40, 50, 32, 53, 36, 52, 51, 97, 36, 57, 40, 50, 53, 36, 97, 37, 168, 43, 161]);
+	String get internalServerError => _root.$meta.d([4, 51, 51, 36, 52, 51, 97, 40, 47, 53, 36, 51, 47, 36, 97, 37, 52, 97, 50, 36, 51, 55, 36, 52, 51]);
+	String get auth => _root.$meta.d([12, 32, 52, 55, 32, 40, 50, 36, 50, 97, 40, 47, 39, 46, 51, 44, 32, 53, 40, 46, 47, 50, 97, 37, 36, 97, 34, 46, 47, 47, 36, 57, 40, 46, 47]);
 }
 
 // Path: labels.dialog
@@ -223,8 +223,8 @@ class TranslationsLabelsDialogFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get deleteTitle => _root.$meta.d([48, 22, 19, 19, 17, 6, 16, 16, 10, 12, 13]);
-	String get deleteContent => _root.$meta.d([53, 12, 22, 15, 6, 25, 78, 21, 12, 22, 16, 67, 16, 22, 19, 19, 17, 10, 14, 6, 17, 67, 0, 6, 23, 67, 6, 13, 17, 6, 4, 10, 16, 23, 17, 6, 14, 6, 13, 23, 67, 92]);
+	String get deleteTitle => _root.$meta.d([18, 52, 49, 49, 51, 36, 50, 50, 40, 46, 47]);
+	String get deleteContent => _root.$meta.d([23, 46, 52, 45, 36, 59, 108, 55, 46, 52, 50, 97, 50, 52, 49, 49, 51, 40, 44, 36, 51, 97, 34, 36, 53, 97, 36, 47, 51, 36, 38, 40, 50, 53, 51, 36, 44, 36, 47, 53, 97, 126]);
 }
 
 // Path: labels.actions
@@ -234,16 +234,16 @@ class TranslationsLabelsActionsFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get resetPassword => _root.$meta.d([46, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6, 67, 12, 22, 1, 15, 10, 138, 67, 92]);
-	String get resendValidationCode => _root.$meta.d([49, 6, 13, 21, 12, 26, 6, 17, 67, 15, 6, 67, 0, 12, 7, 6, 67, 7, 6, 67, 21, 2, 15, 10, 7, 2, 23, 10, 12, 13]);
-	String get changePassword => _root.$meta.d([32, 11, 2, 13, 4, 6, 17, 67, 15, 6, 67, 14, 12, 23, 67, 7, 6, 67, 19, 2, 16, 16, 6]);
-	String get logout => _root.$meta.d([39, 138, 0, 12, 13, 13, 6, 27, 10, 12, 13]);
-	String get contactUs => _root.$meta.d([32, 12, 13, 23, 2, 0, 23, 6, 25, 67, 13, 12, 22, 16]);
-	String get terms => _root.$meta.d([32, 12, 13, 7, 10, 23, 10, 12, 13, 16, 67, 7, 68, 22, 23, 10, 15, 10, 16, 2, 23, 10, 12, 13, 16]);
-	String get faq => _root.$meta.d([37, 34, 50]);
-	String get setting => _root.$meta.d([51, 2, 17, 2, 14, 139, 23, 17, 6]);
-	String get about => _root.$meta.d([34, 67, 19, 17, 12, 19, 12, 16]);
-	String get login => _root.$meta.d([32, 12, 13, 13, 6, 27, 10, 12, 13]);
+	String get resetPassword => _root.$meta.d([12, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36, 97, 46, 52, 35, 45, 40, 168, 97, 126]);
+	String get resendValidationCode => _root.$meta.d([19, 36, 47, 55, 46, 56, 36, 51, 97, 45, 36, 97, 34, 46, 37, 36, 97, 37, 36, 97, 55, 32, 45, 40, 37, 32, 53, 40, 46, 47]);
+	String get changePassword => _root.$meta.d([2, 41, 32, 47, 38, 36, 51, 97, 45, 36, 97, 44, 46, 53, 97, 37, 36, 97, 49, 32, 50, 50, 36]);
+	String get logout => _root.$meta.d([5, 168, 34, 46, 47, 47, 36, 57, 40, 46, 47]);
+	String get contactUs => _root.$meta.d([2, 46, 47, 53, 32, 34, 53, 36, 59, 97, 47, 46, 52, 50]);
+	String get terms => _root.$meta.d([2, 46, 47, 37, 40, 53, 40, 46, 47, 50, 97, 37, 102, 52, 53, 40, 45, 40, 50, 32, 53, 40, 46, 47, 50]);
+	String get faq => _root.$meta.d([7, 0, 16]);
+	String get setting => _root.$meta.d([17, 32, 51, 32, 44, 169, 53, 51, 36]);
+	String get about => _root.$meta.d([0, 97, 49, 51, 46, 49, 46, 50]);
+	String get login => _root.$meta.d([2, 46, 47, 47, 36, 57, 40, 46, 47]);
 }
 
 // Path: labels.appSetting
@@ -253,17 +253,17 @@ class TranslationsLabelsAppSettingFr {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get sectionGeneral => _root.$meta.d([36, 138, 13, 138, 17, 2, 15]);
-	String get sectionApi => _root.$meta.d([49, 38, 48, 55, 67, 34, 51, 42]);
-	String get sectionLogging => _root.$meta.d([47, 12, 4, 16]);
-	String get languageTitle => _root.$meta.d([47, 2, 13, 4, 22, 6]);
-	String get apiConnectTimeoutTitle => _root.$meta.d([39, 138, 15, 2, 10, 67, 7, 68, 2, 23, 23, 6, 13, 23, 6, 67, 7, 6, 67, 0, 12, 13, 13, 6, 27, 10, 12, 13]);
-	String get apiSendTimeoutTitle => _root.$meta.d([39, 138, 15, 2, 10, 67, 7, 68, 2, 23, 23, 6, 13, 23, 6, 67, 7, 68, 6, 13, 21, 12, 10, 6, 67, 7, 6, 67, 15, 2, 67, 17, 6, 18, 22, 137, 23, 6]);
-	String get apiReceiveTimeoutTitle => _root.$meta.d([39, 138, 15, 2, 10, 67, 7, 68, 2, 23, 23, 6, 13, 23, 6, 67, 19, 12, 22, 17, 67, 15, 2, 67, 17, 138, 0, 6, 19, 23, 10, 12, 13, 67, 7, 6, 67, 15, 2, 67, 17, 138, 19, 12, 13, 16, 6]);
-	String get logFileKeepHistoryTitle => _root.$meta.d([43, 10, 16, 23, 12, 17, 10, 18, 22, 6, 67, 7, 6, 16, 67, 5, 10, 0, 11, 10, 6, 17, 16, 67, 15, 12, 4, 16]);
-	String get logFileSizeTitle => _root.$meta.d([55, 2, 10, 15, 15, 6, 67, 7, 6, 67, 0, 11, 2, 18, 22, 6, 67, 5, 10, 0, 11, 10, 6, 17, 67, 15, 12, 4, 16]);
-	String get loggerEnableTitle => _root.$meta.d([34, 0, 23, 10, 21, 6, 17, 67, 15, 6, 16, 67, 15, 12, 4, 16, 67, 7, 6, 67, 15, 68, 2, 19, 19, 15, 10, 0, 2, 23, 10, 12, 13]);
-	String get french => _root.$meta.d([37, 17, 2, 13, 132, 2, 10, 16]);
-	String get english => _root.$meta.d([34, 13, 4, 15, 2, 10, 16]);
-	String get seconds => _root.$meta.d([48, 6, 0, 12, 13, 7, 6, 16]);
+	String get sectionGeneral => _root.$meta.d([6, 168, 47, 168, 51, 32, 45]);
+	String get sectionApi => _root.$meta.d([19, 4, 18, 21, 97, 0, 17, 8]);
+	String get sectionLogging => _root.$meta.d([13, 46, 38, 50]);
+	String get languageTitle => _root.$meta.d([13, 32, 47, 38, 52, 36]);
+	String get apiConnectTimeoutTitle => _root.$meta.d([5, 168, 45, 32, 40, 97, 37, 102, 32, 53, 53, 36, 47, 53, 36, 97, 37, 36, 97, 34, 46, 47, 47, 36, 57, 40, 46, 47]);
+	String get apiSendTimeoutTitle => _root.$meta.d([5, 168, 45, 32, 40, 97, 37, 102, 32, 53, 53, 36, 47, 53, 36, 97, 37, 102, 36, 47, 55, 46, 40, 36, 97, 37, 36, 97, 45, 32, 97, 51, 36, 48, 52, 171, 53, 36]);
+	String get apiReceiveTimeoutTitle => _root.$meta.d([5, 168, 45, 32, 40, 97, 37, 102, 32, 53, 53, 36, 47, 53, 36, 97, 49, 46, 52, 51, 97, 45, 32, 97, 51, 168, 34, 36, 49, 53, 40, 46, 47, 97, 37, 36, 97, 45, 32, 97, 51, 168, 49, 46, 47, 50, 36]);
+	String get logFileKeepHistoryTitle => _root.$meta.d([9, 40, 50, 53, 46, 51, 40, 48, 52, 36, 97, 37, 36, 50, 97, 39, 40, 34, 41, 40, 36, 51, 50, 97, 45, 46, 38, 50]);
+	String get logFileSizeTitle => _root.$meta.d([21, 32, 40, 45, 45, 36, 97, 37, 36, 97, 34, 41, 32, 48, 52, 36, 97, 39, 40, 34, 41, 40, 36, 51, 97, 45, 46, 38, 50]);
+	String get loggerEnableTitle => _root.$meta.d([0, 34, 53, 40, 55, 36, 51, 97, 45, 36, 50, 97, 45, 46, 38, 50, 97, 37, 36, 97, 45, 102, 32, 49, 49, 45, 40, 34, 32, 53, 40, 46, 47]);
+	String get french => _root.$meta.d([7, 51, 32, 47, 166, 32, 40, 50]);
+	String get english => _root.$meta.d([0, 47, 38, 45, 32, 40, 50]);
+	String get seconds => _root.$meta.d([18, 36, 34, 46, 47, 37, 36, 50]);
 }

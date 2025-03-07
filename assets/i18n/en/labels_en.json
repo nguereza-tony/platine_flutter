@@ -1,0 +1,37 @@
+{
+  "no_record": "No records",
+  "filter_select_all": "-- A;; --",
+  "securities": "Securities",
+  "help_supports": "Help & Supports",
+  "dialog": {
+    "delete_title": "Deletion",
+    "delete_content": "Do you want to delete this record ?"
+  },
+  "actions": {
+    "reset_password": "Forgot your password ?",
+    "resend_validation_code": "Resend validation code",
+    "change_password": "Change password",
+    "logout": "Logout",
+    "contact_us": "Contact us",
+    "terms": "Terms of use",
+    "faq": "FAQ",
+    "setting": "Setting",
+    "about": "About",
+    "login": "Login"
+  },
+  "app_setting": {
+    "section_general": "General",
+    "section_api": "REST API",
+    "section_logging": "Logs",
+    "language_title": "Language",
+    "api_connect_timeout_title": "Connection timeout",
+    "api_send_timeout_title": "Request send timeout",
+    "api_receive_timeout_title": "Response receive timeout",
+    "log_file_keep_history_title": "Log file history",
+    "log_file_size_title": "Size of each log file",
+    "logger_enable_title": "Enable application logs",
+    "french": "French",
+    "english": "English",
+    "seconds": "Seconds"
+  }
+}

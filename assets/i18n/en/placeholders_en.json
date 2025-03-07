@@ -1,0 +1,16 @@
+{
+  "username": "Username",
+  "email": "Email",
+  "lastname": "Last Name",
+  "firstname": "First Name",
+  "new_password": "New Password",
+  "password": "Password",
+  "current_password": "Current Password",
+  "confirm_password": "Password Confirmation",
+  "validation_code": "Validation Code",
+  "start_date": "Start Date",
+  "end_date": "End Date",
+  "date": "Date",
+  "search": "Search",
+  "description": "Description"
+}
